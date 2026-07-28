@@ -95,6 +95,8 @@ public class PlayerScript : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(PlayerMove.normalized);
 
+
+
         }
 
 
