@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 3a24fd08bc622c241b8b70dfdc87ab34
   - enabled: 1
-    path: Assets/Scenes/InGame.unity
+    path: Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
     guid: 5a463281e6e238742a45430f11e82829
   - enabled: 1
     path: Assets/Scenes/Result.unity
     guid: 4db5e459338f142479c41932ccc8d9a6
   - enabled: 1
-    path: Assets/Scenes/Game Clear.unity
+    path: Assets/Scenes/GameClear.unity
     guid: e060b2c5593ba7543a2c6d127b132846
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
