@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ScoreManageScript : MonoBehaviour
 {
-    public static ScoreManager Instance;
+    public static ScoreManageScript Instance;
 
     public int ValveCount;
     public int FloppyCount;
@@ -26,19 +26,19 @@ public class ScoreManageScript : MonoBehaviour
         Instance = this;
     }
 
-    public void AddObject()
+    public void AddObject(GetObjectScript.ObjectName OBName)
     {
-        switch (objectName)
+        switch (OBName)
         {
-            case ObjectName.Valve:
+            case GetObjectScript.ObjectName.Valve:
                 ValveCount++;
                 break;
 
-            case ObjectName.Floppy:
+            case GetObjectScript.ObjectName.Floppy:
                 FloppyCount++;
                 break;
 
-            case ObjectName.Gear:
+            case GetObjectScript.ObjectName.Gear:
                 GearCount++;
                 break;
 
