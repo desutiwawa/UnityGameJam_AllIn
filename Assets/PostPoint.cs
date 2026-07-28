@@ -1,8 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-
-public class TitleSceneScript : MonoBehaviour
+public class PostPoint : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,17 +12,5 @@ public class TitleSceneScript : MonoBehaviour
     void Update()
     {
         
-
-
-
-
-
-        if(Input.GetKey(KeyCode.Space))
-        {
-
-            SceneManager.LoadScene("InGame");
-
-        }
-
     }
 }
