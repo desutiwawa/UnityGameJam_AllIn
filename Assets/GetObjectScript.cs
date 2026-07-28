@@ -1,8 +1,13 @@
+using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GetObjectScript : MonoBehaviour
 {
+
+    
+
     private Renderer objectRenderer;
     public enum ObjectName
     {
@@ -10,6 +15,8 @@ public class GetObjectScript : MonoBehaviour
         Floppy,
         Gear
     }
+
+    public ObjectName objectName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,12 +32,14 @@ public class GetObjectScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-        {
+        if(!other.CompareTag("Player"))
+        return;
 
-            Destroy(gameObject);
-        }
+        .Instance.
+
+        Destroy(gameObject);
+
     }
-
+   
 
 }
