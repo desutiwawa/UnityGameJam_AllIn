@@ -40,7 +40,20 @@ public class ScoreManageScript : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance == null)
+        {
+            Instance = this;
+
+            DontDestroyOnLoad(gameObject);
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+
+
     }
 
     public void AddObject(GetObjectScript.ObjectName OBName)
@@ -49,17 +62,14 @@ public class ScoreManageScript : MonoBehaviour
         {
             case GetObjectScript.ObjectName.Valve:
                 ValveCount++;
-                TotalValveCount++;
                 break;
 
             case GetObjectScript.ObjectName.Floppy:
                 FloppyCount++;
-                TotalFloppyCount++;
                 break;
 
             case GetObjectScript.ObjectName.Gear:
                 GearCount++;
-                TotalGearCount++;
                 break;
 
         }
@@ -72,6 +82,9 @@ public class ScoreManageScript : MonoBehaviour
         TotalScore += FloppyCount * FloppyPoint;
         TotalScore += GearCount * GearPoint;
 
+        TotalValveCount += ValveCount;
+        TotalFloppyCount += FloppyCount;
+        TotalGearCount += GearCount;
 
         ValveCount = 0;
         FloppyCount = 0;
