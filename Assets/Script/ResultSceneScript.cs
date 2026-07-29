@@ -16,7 +16,7 @@ public class ResultSceneScript : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
 
-            SceneManager.LoadScene("Game Clear");
+            SceneManager.LoadScene("GameClear");
         }
     }
 }

@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
+    guid: 5ce4a7da267ab2c479afdf9b82558772
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 3a24fd08bc622c241b8b70dfdc87ab34
   - enabled: 1
-    path: Assets/RPG_FPS_game_assets_industrial/Map_v1.unity
-    guid: 5a463281e6e238742a45430f11e82829
+    path: Assets/Scenes/InGame.unity
+    guid: b14f661b998989c4591960e931122384
   - enabled: 1
     path: Assets/Scenes/Result.unity
     guid: 4db5e459338f142479c41932ccc8d9a6

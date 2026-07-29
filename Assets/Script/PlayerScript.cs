@@ -4,13 +4,18 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerScript : MonoBehaviour
 {
-    public float moveSpeed = 0.02f;
+    
 
+    public float moveSpeed = 8.0f;
+    //private Animator animator;
 
     Rigidbody m_rigitBody;
     Animator m_playerAnimator;
@@ -22,6 +27,10 @@ public class PlayerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+
+        //animator = GetComponent<Animator>();
+
         m_rigitBody = GetComponent<Rigidbody>();
 
         m_playerAnimator = GetComponent<Animator>();
@@ -34,8 +43,9 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         movePlayer();
-    }
 
+        
+    }
 
     void movePlayer()
     {
@@ -99,14 +109,17 @@ public class PlayerScript : MonoBehaviour
 
         }
 
+       
+
+
 
     }
 
-    
 
-  
 
-   
+
+
+
 
 
 

@@ -14,11 +14,6 @@ public class TitleSceneScript : MonoBehaviour
     void Update()
     {
         
-
-
-
-
-
         if(Input.GetKey(KeyCode.Space))
         {
 
